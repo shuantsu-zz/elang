@@ -1,0 +1,283 @@
+/****************************************************
+	estilos globais
+****************************************************/
+
+* {
+	box-sizing: border-box;
+	-moz-transition: 1s all;
+	-webkit-transition: 1s all;
+	transition: 1s all;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+/****************************************************
+	background-colors
+****************************************************/
+
+.bg_turquoise {
+        background-color:#1abc9c;
+}
+.bg_green_sea {
+        background-color:#16a085;
+}
+.bg_sun_flower {
+        background-color:#f1c40f;
+}
+.bg_orange {
+        background-color:#f39c12;
+}
+.bg_emerald {
+        background-color:#2ecc71;
+}
+.bg_nephritis {
+        background-color:#27ae60;
+}
+.bg_carrot {
+        background-color:#e67e22;
+}
+.bg_pumpkin {
+        background-color:#d35400;
+}
+.bg_peter_river {
+        background-color:#3498db;
+}
+.bg_belize_hole {
+        background-color:#2980b9;
+}
+.bg_alizarin {
+        background-color:#e74c3c;
+}
+.bg_pomegranate {
+        background-color:#c0392b;
+}
+.bg_amethyst {
+        background-color:#9b59b6;
+}
+.bg_wisteria {
+        background-color:#8e44ad;
+}
+.bg_clouds {
+        background-color:#ecf0f1;
+}
+.bg_silver {
+        background-color:#bdc3c7;
+}
+.bg_wet_asphalt {
+        background-color:#34495e;
+}
+.bg_midnight_blue {
+        background-color:#2c3e50;
+}
+.bg_concrete {
+        background-color:#95a5a6;
+}
+.bg_asbestos {
+        background-color:#7f8c8d;
+}
+
+/****************************************************
+	tipografia
+****************************************************/
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 17px;
+}
+
+h1 { font-size: 2.0em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.6em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.0em; }
+
+/****************************************************
+	cores
+****************************************************/
+
+nav a, nav a:hover, nav a:active, nav a:visited {
+	color: white !important;
+	padding: 5px;
+}
+
+footer {
+	color: white;
+}
+
+/****************************************************
+	ul li
+****************************************************/
+
+li {
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	border-right: 1px solid white;
+	padding-right: 5px;
+}
+
+nav li:last-child {
+	border-right: none;
+}
+
+/****************************************************
+	padding, margin
+****************************************************/
+
+footer, nav {
+	padding: 10px;
+}
+
+body, ul, li, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding-top: 20px;
+}
+
+section {
+	padding: 30px;
+}
+
+/****************************************************
+	text-align
+****************************************************/
+
+header, nav, footer {
+	text-align: center; 
+}
+
+.center-block {
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
+
+/****************************************************
+	shadows
+****************************************************/
+
+body {
+	text-shadow: 1px 1px 3px rgba(0,0,0,.3);
+}
+
+nav, main, #cursos_destaque, #cursos_header {
+	-webkit-box-shadow: inset 0px 6px 9px -8px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 6px 9px -8px rgba(0,0,0,1);
+	box-shadow: inset 0px 6px 9px -8px rgba(0,0,0,1);
+}
+
+footer {
+	-webkit-box-shadow: inset 0px 6px 9px -8px rgba(0,0,0,1), 0px 6px 9px -8px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px 6px 9px -8px rgba(0,0,0,1), 0px 6px 9px -8px rgba(0,0,0,1);
+	box-shadow: inset 0px 6px 9px -8px rgba(0,0,0,1), 0px 6px 9px -8px rgba(0,0,0,1);
+}
+
+/****************************************************
+	form
+****************************************************/
+
+fieldset {
+	border-radius: 8px;
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend {
+    width:inherit; /* Or auto */
+	margin-top:20px;
+    padding: 0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}
+
+input {
+	margin-bottom: 15px;
+}
+
+/****************************************************
+	classes
+****************************************************/
+
+.padding-20 {
+	padding: 20px;
+}
+
+.btm-padding-20 {
+	padding-bottom: 20px;
+}
+
+/****************************************************
+	cursos destaque pagina principal
+****************************************************/
+
+#cursos_destaque {
+	text-align: center;
+}
+
+#cursos_destaque img {
+	padding-bottom: 15px;
+}
+
+.curso_status {
+	margin: 0 auto;
+}
+
+.curso_status td:first-child {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.curso_status td:last-child {
+	text-align: left !important;
+}
+
+/****************************************************
+	sticky footer
+****************************************************/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 45px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 45px;
+  background-color: #f5f5f5;
+}
+
+/****************************************************
+	barra
+****************************************************/
+
+#barra {
+	padding: 5px;
+	color: white;
+}
+#barra a, #barra a:hover, #barra a:active, #barra a:visited {
+	color: white !important;
+	padding: 5px;
+}
